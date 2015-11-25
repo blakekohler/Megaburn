@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FourthMaster.master.cs" Inherits="FourthMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><asp:ContentPlaceHolder id="title" runat="server">
+    
+    Our Doctors - Cardiology Website Template</asp:ContentPlaceHolder></title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css">
+	<![endif]-->
+</head>
+<body>
+    <form id="Form1" runat="server">
+	<div id="header">
+		<div>
+			<div>
+			<div style="margin-left:232px;">
+				<span>A Healthy Life...</span>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<span class="tagline">is a Good Life.</span>
+			</div>
+			<ul>
+				<li class="selected">
+					<a href="default.aspx">Home</a>
+				</li>
+				<li>
+					<a href="about.aspx">About Us</a>
+				</li>
+				<li>
+					<a href="services.aspx">Services</a>
+				</li>
+				<li>
+					<a href="store.aspx">Store</a>
+				</li>
+				<li><a href="Coaches.aspx">Our Coaches</a></li>
+                   <li>
+					<asp:LoginStatus ID="LoginStatus1" runat="server" 
+                                 onloggedout="LoginStatus1_LoggedOut" />
+				</li>
+				
+			
+                    <li ID="AdminLabel" runat="server"></li>
+                    <li ID="WelcomeLabel" runat="server" class="welcomelabel">
+				</li>  
+
+			</ul>
+		</div>
+	</div>
+        </div>
+	<div id="body">
+		<div id="content">
+			<div id="sidebar">
+				
+   <h3>Services</h3>
+				<ul>
+					<li class="selected collapse">
+						<a href="services.html">Training Services</a>
+						<ul>
+							<li>
+								<a href="coaches.aspx">Personalized Training</a>
+							</li>
+							<li>
+								<a href="WorkOutLog.aspx">Workout Logging Tool</a>
+							</li>
+							<li>
+								<a href="videos.aspx">Video Training Sessions</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="calories.aspx">Calories Calculator</a>
+					</li>
+					<li>
+						<a href="mealplan.aspx">Meal Plans</a>
+					</li>
+					<li>
+						<a href="Goal.aspx">Goal Tracking</a>
+					</li>
+				</ul>
+			</div>
+			<div id="section">
+        <asp:ContentPlaceHolder ID="MainServices" runat="server">
+				<h2>Training Services</h2>
+				<p>
+					At MEGABURN we're dedicated to give you all the resources that you'll need to achieve the goals that you have set. Including access to an amazing group of personal trainers- each with different qualifications and experience to help specialize your workouts to meet your goals.
+                 
+				</p>
+				<ul>
+					<li>
+						<a href="heart-monitoring.html" class="figure"><img src="images/heart-monitoring.jpg" alt=""></a>
+						<div>
+							<h3><a href="heart-monitoring.html">Personal Training</a></h3>
+							<p>
+								Every tool you need for success is at your finger tips at MEGABURN. Help is just a few clicks away. Get your own personal training regimen, made specifically for your goals. 
+							</p>
+							<a href="services.html" class="more">more info</a>
+						</div>
+					</li>
+					<li>
+						<a href="heart-monitoring.html" class="figure"><img src="images/electrocardiograms.jpg" alt=""></a>
+						<div>
+							<h3><a href="services.html">Workout Tracking</a></h3>
+							<p>
+								Track every workout from start to finish and see your results as they progress over time with our charts and graphs.
+							</p>
+							<a href="services.html" class="more">more info</a>
+						</div>
+					</li>
+					<li>
+						<a href="services.html" class="figure"><img src="images/stress-testing.jpg" alt=""></a>
+						<div>
+							<h3><a href="services.html">Goal Management</a></h3>
+							<p>
+								Track and monitor your goals and see how your are doing compared to where you wanted to be when you started. 
+							</p>
+							<a href="services.html" class="more">more info</a>
+						</div>
+					</li>
+				</ul>
+			</asp:ContentPlaceHolder></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				Copyright &copy; <a href="index.html">MEGABURN</a>
+			</p>
+			<ul>
+				<li>
+					<a href="default.aspx">Home</a>
+				</li>
+				<li>
+					<a href="about.aspx">About</a>
+				</li>
+				<li>
+					<a href="services.aspx">Services</a>
+				</li>
+				<li>
+					<a href="store.aspx">Store</a>
+				</li>
+                <li>
+					<a href="coaches.aspx">Coaches</a>
+				</li>
+				<li>
+					<a href="login.aspx">Login</a>
+				</li>
+				<li>
+					<a href="signup.aspx">Sign Up</a>
+				</li>
+				
+			</ul>
+			<div>
+				<span>stay connected:</span>
+				<a href="http://www.facebook.com" id="facebook">facebook</a>
+				<a href="http://www.twitter.com" id="twitter">twitter</a>
+				<a href="http://www.google.com/+" id="googleplus">googleplus</a>
+			</div>
+		</div>
+	</div></form>
+</body>
+</html>

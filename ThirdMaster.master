@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ThirdMaster.master.cs" Inherits="ThirdMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><asp:ContentPlaceHolder id="title" runat="server">Our Doctors - Cardiology Website Template</asp:ContentPlaceHolder></title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css">
+	<![endif]-->
+</head>
+<body>
+    <form id="Form1" runat="server">
+	<div id="header">
+		<div>
+			<div>
+			<div style="margin-left:232px;">
+				<span>A Healthy Life...</span>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<span class="tagline">is a Good Life.</span>
+			</div>
+			<ul>
+				<li class="selected">
+					<a href="default.aspx">Home</a>
+				</li>
+				<li>
+					<a href="About.aspx">About Us</a>
+				</li>
+				<li>
+					<a href="services.aspx">Services</a>
+				</li>
+				<li>
+					<a href="store.aspx">Store</a>
+				</li>
+				<li><a href="Coaches.aspx">Our Coaches</a></li>
+                   <li>
+					<asp:LoginStatus ID="LoginStatus1" runat="server" 
+                                 onloggedout="LoginStatus1_LoggedOut" />
+				</li>
+				
+			
+                    <li ID="AdminLabel" runat="server"></li>
+                    <li ID="WelcomeLabel" runat="server" class="welcomelabel">
+				</li>  
+
+			</ul>
+		</div>
+	</div>
+        </div>
+	<div id="body">
+		<div class="content">
+			<div id="section">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+				<h2>about</h2>
+				<p>
+					MEGABURN was founded in 2013 with the vision of bringing affordable personal training and coaching to all people. We've combined the best in nutrionists, doctors, trainers and dietitions to help build the perfect workout plans just for you.<br /> <b>MEGABURN is here to help you: lets Live the Healthy Life.</b>
+				</p>
+				<img src="images/old-couple.jpg" alt="">
+				<div class="article">
+					<div>
+						<h3>What is our Vision</h3>
+						<p>
+							Our vision is to bring the benefits and knowledge of over 30 years of experience in healthy living to the masses by providing a centeralized hub with the tools you'll need to achieve the success you're looking for.
+						</p>
+						<h3>Our Struggles</h3>
+						<p>
+							MEGABURN was founded because we found ourselves struggling, just like you do to, to keep the weight off, add lean muscle mass and to stay in shape. We wanted a place were people all over who are facing that same struggle can come and get help- from a community, from our resources and most importantly from trained professionals.
+						</p>
+					</div>
+					<div>
+						<h3>Our Goals</h3>
+						<p>
+							Our Goals are simple; We want what you want. We want to help you succeed no matter what your health goals maybe. If you want to lose weight, gain weight or just simply become a little healthier we've got the tools and the knowledge to make your path to the Healthy Life a litle easier.
+						</p>
+						<h3>Our Tools for Success</h3>
+						<p>
+							We've built a large selection of tools into the website to allow you the oppertunity to live the best life you can. Take a look at the tools below and find out what you can do, today, to help you move towards a healthier and more fulfilled life.
+						<ul>
+                                <li><a href="advice.aspx">Get Expert Advice</a></li>
+                                <li><a href="calories.aspx">Track Your Calories</a></li>
+                                <li><a href="goals.aspx">Track and Manage Your Goals</a></li>
+                                <li><a href="workouts.aspx">Select a Workout that Works</a></li>
+							</ul></p>
+						
+							
+						
+						
+						
+						
+					</div>
+				</div></asp:ContentPlaceHolder>
+			</div>
+			<div id="sidebar">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+				<div class="search">
+					<h3>search</h3>
+					<form action="index.html">
+						<input type="text" name="search" id="search" value="Search here...">
+						<input type="hidden" name="submit" id="submitBtn" value="">
+					</form>
+				</div>
+				<div class="testimonials">
+					<h3>Clients' testimonials</h3>
+					<ul>
+						<li>
+							<p>
+								I worked out for years alone trying to build muscle mass but after a few weeks I'd stop going to the gym. Nothing was keeping me accountable. Now with MEGABURN I have a whole team of personal trainers and coaches helping to keep me accountable.
+							</p>
+							<a href="#" >-Mr.Robinson, Ohio</a>
+						</li>
+						<li>
+							<p>
+								I had a real struggle to keep the weight off after having my nineteeth child. I weighed over 7000 pounds and finally decided I should do something about it- thats when I turned to MEGABURN. With there help I've lost thousands of pounds and don't look remotely like Jabba the Hut anymore.
+							</p>
+							<a href="#" >-Joni Mainstreet, Minnesota</a>
+						</li>
+						<li>
+							<p>
+								I found MEGABURN searching for my next workout. There videos and tutorials really helped me develop a workout that worked for me personally.
+							</p>
+							<a href="#" >-Jessica Greene, New York</a>
+						</li>
+					</ul>
+				</div>
+				<div class="awards">
+					<h3>awards</h3>
+					<a href="#" class="first"><img src="images/award.jpg" alt=""></a> <a href="#"><img src="images/award2.jpg" alt=""></a>
+				</div>
+			</asp:ContentPlaceHolder></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				Copyright &copy; <a href="index.html">MEGABURN</a>
+			</p>
+			<ul>
+				<li>
+					<a href="default.aspx">Home</a>
+				</li>
+				<li>
+					<a href="about.aspx">About</a>
+				</li>
+				<li>
+					<a href="services.aspx">Services</a>
+				</li>
+				<li>
+					<a href="store.aspx">Store</a>
+				</li>
+                <li>
+					<a href="coaches.aspx">Coaches</a>
+				</li>
+				<li>
+					<a href="login.aspx">Login</a>
+				</li>
+				<li>
+					<a href="signup.aspx">Sign Up</a>
+				</li>
+				
+			</ul>
+			<div>
+				<span>stay connected:</span>
+				<a href="http://www.facebook.com" id="facebook">facebook</a>
+				<a href="http://www.twitter.com" id="twitter">twitter</a>
+				<a href="http://www.google.com/+" id="googleplus">googleplus</a>
+			</div>
+		</div>
+	</div></form>
+</body>
+</html>

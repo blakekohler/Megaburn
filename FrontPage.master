@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontPage.master.cs" Inherits="FrontPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta charset="UTF-8">
+	 <asp:ContentPlaceHolder id="head" runat="server"><title>MEGABURN: Live the Healthy Life</title></asp:ContentPlaceHolder>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css">
+	<![endif]-->
+    
+   
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <asp:ContentPlaceHolder ID="contentheader" runat="server">
+		</asp:ContentPlaceHolder>
+	</div>
+	<div id="body">
+		<div class="header">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			where is this?
+                </asp:ContentPlaceHolder>
+		</div>
+		<div class="body">
+			<div class="section">
+				<div class="article">
+                    <asp:ContentPlaceHolder ID="article" runat="server">
+					
+                        </asp:ContentPlaceHolder>
+				</div>
+				<div class="aside">
+                    <asp:ContentPlaceHolder ID="aside" runat="server">
+					<b>Customers' testimonials</b>
+					<p>
+						I've always tried to keep the weight off. Especially after eating too many reese's peanut butter eggs during easter. The holidays are always rough and it seems like my matabolism has slowed down. But with MegaBurn I was able to start being accountable to myself for the goals that I set and had clear and reachable things to work towards.
+					</p>
+					<a href="#">-Mr.Robinson, Ohio</a>
+				</asp:ContentPlaceHolder></div>
+			</div>
+		</div>
+		<div class="footer">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+			<div>
+				<a href="WorkOutLog.aspx"><img src="images/doctors.jpg" alt=""></a>
+				<h3>Workouts</h3>
+				<p>
+					Find the workout that will best fit your goals by looking through our list of workouts and finding something that will burn enough calories to meet your weight goals.
+				</p>
+			</div>
+			<div>
+				<a href="calories.aspx"><img src="images/what-can-we-do.jpg" alt=""></a>
+				<h3>Meals</h3>
+				<p>
+					Find recipies that fit within your alotted calorie amount so that you can eat great and still lose weight.
+				</p>
+			</div>
+			<div>
+				<a href="goal.aspx"><img src="images/where-you-can-find.jpg" alt=""></a>
+				<h3>Track Your Weight Loss</h3>
+				<p>
+					Track your weight loss with our weight loss tracking program and find out exactly how many calories you need to burn to get meet your goals.
+				</p>
+			</asp:ContentPlaceHolder></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				Copyright &copy; <a href="index.html">MEGABURN</a>
+			</p>
+			<ul>
+				<li>
+					<a href="default.aspx">Home</a>
+				</li>
+				<li>
+					<a href="about.aspx">About</a>
+				</li>
+				<li>
+					<a href="services.aspx">Services</a>
+				</li>
+				<li>
+					<a href="store.aspx">Store</a>
+				</li>
+                <li>
+					<a href="coaches.aspx">Coaches</a>
+				</li>
+				<li>
+					<a href="login.aspx">Login</a>
+				</li>
+				<li>
+					<a href="signup.aspx">Sign Up</a>
+				</li>
+				
+			</ul>
+			<div>
+				<span>stay connected:</span>
+				<a href="http://www.facebook.com" id="facebook">facebook</a>
+				<a href="http://www.twitter.com" id="twitter">twitter</a>
+				<a href="http://www.google.com/+" id="googleplus">googleplus</a>
+			</div>
+		</div>
+	</div>
+    </form>
+</body>
+</html>
